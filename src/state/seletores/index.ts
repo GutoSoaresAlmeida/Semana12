@@ -10,7 +10,7 @@ export const eventosFiltradosState = selector({
       if (!filtro.data) {
         return true
       }
-      const ehOMesmoDia = filtro.data.toISOString().slice(0, 10) === evento.inicio.toISOString().slice(0, 10)
+      const ehOMesmoDia = filtro.data.toISOString().slice(0, 12) === evento.inicio.toISOString().slice(0, 12)
       return ehOMesmoDia
     })
     return eventos
